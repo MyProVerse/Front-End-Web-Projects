@@ -15,11 +15,14 @@ Welcome to the ViserMart e-commerce website repository! This project is a front-
 
 **Pages**
 **Homepage:** The homepage serves as the entry point to the e-commerce website, featuring promotional content, featured products, and navigational elements to guide users through the site.
+
 **Products Page:** The products page displays a catalog of available products, including product images, descriptions, and pricing. Users can browse and filter products based on various criteria.
+
 **Installation and Usage**
 Clone the repository to your local machine.
 Open the index.html file in your web browser to view the homepage.
 Navigate to the products.html file to view the products page.
 Explore the website's features and functionalities, and customize the content as needed for your specific use case.
+
 **Contributing**
 Contributions are welcome! If you'd like to contribute to the ViserMart e-commerce website project, please fork the repository, make your changes, and submit a pull request.
