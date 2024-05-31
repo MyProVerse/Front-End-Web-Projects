@@ -27,6 +27,6 @@ Contributing
 Contributions are welcome! If you'd like to contribute to the Reignverse dating website project, please fork the repository, make your changes, and submit a pull request.
 
 **Contact**
-For inquiries or feedback regarding the Reignverse dating website, please contact alizaman6780@gmail.com.
+For inquiries or feedback regarding the Reignverse dating website, please contact alizaman6780@gmail.com
 
 Thank you for your interest in my project!
