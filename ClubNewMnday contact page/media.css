@@ -1,0 +1,222 @@
+@media only screen and (max-width:948px){
+
+    html{
+        font-size: 13.5px;
+    }
+}
+@media only screen and (max-width:799px){
+
+   html{
+    font-size: 15px;
+   }
+   .heading {
+    width: 30rem;
+   }
+   .heading h1{
+    font-size: 2rem;
+   }
+   .center-center{
+   align-items: center;
+   }
+.form input{
+    display: block;
+ height: 2.9rem;
+ width: 27rem;
+}
+}
+@media only screen and (max-width:709px){
+    section{
+        display: grid;
+        grid-template-areas: 
+        'center center center center'
+        'center center center center'
+        'left left right right'
+        ;
+    }
+    .top{
+    align-items: center;
+    height: 15%;
+
+    }
+    .center-center{
+        text-align: center;
+        width: 100%;
+        display: flex;
+         align-items: center;
+         text-align: center;
+    }
+    .heading{
+        width: 27rem;
+        margin-top: 2rem;
+    }
+    .heading h1{
+        font-size: 2rem;
+    }
+    
+   .form input{
+    display: block;
+    width: 24.5rem;
+        height: 2.5rem;
+        margin-top: 1.5rem;
+    border: var(--center-items) solid 0.25rem;
+
+   }
+   
+    .top-1{
+        display: none;
+    }
+    .top-2{
+        display: none;
+    }
+    .left{
+        grid-area: left;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .center-center{
+        grid-area: center;
+    }
+    .right{
+        grid-area: right;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    
+    .left-1 {
+        display: none;
+    }
+    .left-2 {
+        align-items: flex-end;
+    }
+    .right-3{
+        align-items: flex-end;
+    }
+    .right-1{
+        display: none;
+    }
+}
+@media only screen and (max-width:500px) {
+    html{
+        font-size: 16px;
+    }
+    section{
+        display: grid;
+        grid-template-areas: 
+        'center center center center'
+        'center center center center'
+        'left left right right'
+        ;
+    }
+    .top{
+    align-items: center;
+    height: 15%;
+
+    }
+    .center-center{
+        text-align: center;
+        width: 100%;
+        display: flex;
+         align-items: center;
+         text-align: center;
+    }
+    .heading{
+        width: 27rem;
+        margin-top: 2rem;
+    }
+    .heading h1{
+        font-size: 2rem;
+    }
+    
+   .form input{
+    display: block;
+    width: 24.5rem;
+        height: 2.5rem;
+        margin-top: 1.5rem;
+    border: var(--center-items) solid 0.25rem;
+
+   }
+   
+    .top-1{
+        display: none;
+    }
+    .top-2{
+        display: none;
+    }
+    .left{
+        grid-area: left;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .center-center{
+        grid-area: center;
+    }
+    .right{
+        grid-area: right;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    
+    .left-1 {
+        display: none;
+    }
+    .left-2 {
+        align-items: flex-end;
+    }
+    .right-3{
+        align-items: flex-end;
+    }
+    .right-1{
+        display: none;
+    }
+
+}
+@media only screen and (max-width:433px){
+    html{
+        font-size: 13.5px;
+    }
+    
+}
+@media only screen and (max-width:365px){
+    html{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width:350px){
+    html{
+        font-size: 12.5px;
+    }
+}
+@media only screen and (max-width:337px){
+    html{
+        font-size: 11.5px;
+    }
+}
+@media only screen and (max-width:310px){
+    html{
+        font-size: 11px;
+    }
+    .top{
+        height: 18%;
+    }
+.heading {
+    width: 21rem;
+    
+}
+.form{
+    margin-top: 2.5rem;
+}
+
+.form input{
+    height: 2rem;
+    width: 19rem;
+}
+button{
+    height: 2rem;
+    width: 9.5rem; 
+}
+
+}
