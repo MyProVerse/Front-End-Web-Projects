@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viser - Products</title>
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- jQuery Slim -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Owl Carousel JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Font Awesome JavaScript -->
+    <script src="https://kit.fontawesome.com/8a522ec562.js" crossorigin="anonymous"></script>
+
+    <!-- Monda font family from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monda:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Material icons from google -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Bootstrap Slider CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/css/bootstrap-slider.css">
+
+    <!-- NiceSelect CSS -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/bevacqua/nice-select/master/dist/css/nice-select.css">
+
+    <link rel="stylesheet" href="products.css">
+
+   
+</head>
+
+<body>
+    <div class="main-section">
+
+
+        <nav aria-label="breadcrumb  px-0">
+            <ol class="breadcrumb d-flex justify-content-center py-4 m-0">
+                <li class="breadcrumb-item returning-link"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Products</li>
+            </ol>
+        </nav>
+
+        <div class="products-section">
+            <div class="container  m-auto d-flex ">
+                <div class="product-filters d-xl-flex d-none flex-column ">
+                    <div class="filter-by-price-range-slider mx-0 mt-0 mb-4 border">
+                        <h5 class="title filter-title mb-3 pb-3">Filter by Price</h5>
+                        <div class="price-range-slider d-block mb-3">
+                            <div id="priceRangeSlider"></div>
+                        </div>
+                        <p class=" mb-2 mx-0 mt-0 d-flex justify-content-between">Price :<span id="priceRangeValues">$12
+                                -
+                                $15000</span></p>
+
+                    </div>
+
+                    <div class="filter-by-brand-name p-4 border mb-4 mt-2">
+                        <h5 class="title filter-title mb-4 pb-3">Filter by Brand</h5>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="All-Products" class="ml-2">All Products</label>
+                            <input type="checkbox" checked class="d-block mb-2" id="All-Products">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="FIMI" class="ml-2">FIMI</label>
+                            <input type="checkbox" class="d-block mb-2" id="FIMI">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Sky-Art" class="ml-2">Sky Art</label>
+                            <input type="checkbox" class="d-block mb-2" id="Sky-Art">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Better-World" class="ml-2">Better World</label>
+                            <input type="checkbox" class="d-block mb-2" id="Better-World">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="NaturalCraft" class="ml-2">NaturalCraft</label>
+                            <input type="checkbox" class="d-block mb-2" id="NaturalCraft">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Lego" class="ml-2">Lego</label>
+                            <input type="checkbox" class="d-block mb-2" id="Lego">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Adidas" class="ml-2">Adidas</label>
+                            <input type="checkbox" class="d-block mb-2" id="Adidas">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Yamaha" class="ml-2">Yamaha</label>
+                            <input type="checkbox" class="d-block mb-2" id="Yamaha">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Hatil" class="ml-2">Hatil</label>
+                            <input type="checkbox" class="d-block mb-2" id="Hatil">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Intel@" class="ml-2">Intel@</label>
+                            <input type="checkbox" class="d-block mb-2" id="Intel@">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Diamond-World" class="ml-2">Diamond World</label>
+                            <input type="checkbox" class="d-block mb-2" id="Diamond-World">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Maybelline-New-York" class="ml-2">Maybelline New York</label>
+                            <input type="checkbox" class="d-block mb-2" id="Maybelline-New-York">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="L'Oreal" class="ml-2">L'Oreal</label>
+                            <input type="checkbox" class="d-block mb-2" id="L'Oreal">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="CHANEL" class="ml-2">CHANEL</label>
+                            <input type="checkbox" class="d-block mb-2" id="CHANEL">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Xeric" class="ml-2">Xeric</label>
+                            <input type="checkbox" class="d-block mb-2" id="Xeric">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Tomford" class="ml-2">Tomford</label>
+                            <input type="checkbox" class="d-block mb-2" id="Tomford">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Nike" class="ml-2">Nike</label>
+                            <input type="checkbox" class="d-block mb-2" id="Nike">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Oppo" class="ml-2">Oppo</label>
+                            <input type="checkbox" class="d-block mb-2" id="Oppo">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Vivo" class="ml-2">Vivo</label>
+                            <input type="checkbox" class="d-block mb-2" id="Vivo">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Asics" class="ml-2">Asics</label>
+                            <input type="checkbox" class="d-block mb-2" id="Asics">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Puma" class="ml-2">Puma</label>
+                            <input type="checkbox" class="d-block mb-2" id="Puma">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Lotto" class="ml-2">Lotto</label>
+                            <input type="checkbox" class="d-block mb-2" id="Lotto">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Russel-Athletic" class="ml-2">Russel Athletic</label>
+                            <input type="checkbox" class="d-block mb-2" id="Russel-Athletic">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Skins" class="ml-2">Skins</label>
+                            <input type="checkbox" class="d-block mb-2" id="Skins">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Speedo" class="ml-2">Speedo</label>
+                            <input type="checkbox" class="d-block mb-2" id="Speedo">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Kookabura" class="ml-2">Kookabura</label>
+                            <input type="checkbox" class="d-block mb-2" id="Kookabura">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Hornets" class="ml-2">Hornets</label>
+                            <input type="checkbox" class="d-block mb-2" id="Hornets">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Calvin-Klein" class="ml-2">Calvin Klein</label>
+                            <input type="checkbox" class="d-block mb-2" id="Calvin-Klein">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Gucci" class="ml-2">Gucci</label>
+                            <input type="checkbox" class="d-block mb-2" id="Gucci">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Reebok" class="ml-2">Reebok</label>
+                            <input type="checkbox" class="d-block mb-2" id="Reebok">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Dolce-Gabbana" class="ml-2">Dolce & Gabbana</label>
+                            <input type="checkbox" class="d-block mb-2" id="Dolce-Gabbana">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Giorgio-Armani" class="ml-2">Giorgio Armani</label>
+                            <input type="checkbox" class="d-block mb-2" id="Giorgio-Armani">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Apex" class="ml-2">Apex</label>
+                            <input type="checkbox" class="d-block mb-2" id="Apex">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Hugo-Boss" class="ml-2">Hugo Boss</label>
+                            <input type="checkbox" class="d-block mb-2" id="Hugo-Boss">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Levis" class="ml-2">Levis</label>
+                            <input type="checkbox" class="d-block mb-2" id="Levis">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Ford" class="ml-2">Ford</label>
+                            <input type="checkbox" class="d-block mb-2" id="Ford">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Prada" class="ml-2">Prada</label>
+                            <input type="checkbox" class="d-block mb-2" id="Prada">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="HM" class="ml-2">H&M</label>
+                            <input type="checkbox" class="d-block mb-2" id="HM">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Huawei" class="ml-2">Huawei</label>
+                            <input type="checkbox" class="d-block mb-2" id="Huawei">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Apple" class="ml-2">Apple</label>
+                            <input type="checkbox" class="d-block mb-2" id="Apple">
+                        </div>
+
+                        <div class="brand-filter d-flex flex-row-reverse align-items-center justify-content-end">
+                            <label for="Samsung" class="ml-2">Samsung</label>
+                            <input type="checkbox" class="d-block mb-2" id="Samsung">
+                        </div>
+
+
+
+
+
+
+                    </div>
+                    <div class="filter-by-category-name p-4 mt-2 border">
+                        <h5 class="title filter-title mb-4 pb-3">Filter by Category</h5>
+
+                        <ul>
+                            <li class="category-filter active-link"> <span><i
+                                        class="fa-solid fa-angle-right"></i></span> <a class="category-link"
+                                    href="#">All Category</a></li>
+                            <li class="category-filter"> <span><i class="fa-solid fa-angle-right"></i></span> <a
+                                    class="category-link" href="#">Men's Fashion</a></li>
+                            <li class="category-filter"> <span><i class="fa-solid fa-angle-right"></i></span> <a
+                                    class="category-link" href="#">Women's Fashion</a></li>
+                            <li class="category-filter"> <span><i class="fa-solid fa-angle-right"></i></span> <a
+                                    class="category-link" href="#">Electronics</a></li>
+                            <li class="category-filter"> <span><i class="fa-solid fa-angle-right"></i></span> <a
+                                    class="category-link" href="#">Home Appliances</a></li>
+                            <li class="category-filter"> <span><i class="fa-solid fa-angle-right"></i></span> <a
+                                    class="category-link" href="#">Automobile & Motorcycle</a></li>
+                            <li class="category-filter"> <span><i class="fa-solid fa-angle-right"></i></span> <a
+                                    class="category-link" href="#">Sports & Outdoors</a></li>
+                            <li class="category-filter"> <span><i class="fa-solid fa-angle-right"></i></span> <a
+                                    class="category-link" href="#">Baby's Fashion</a></li>
+                            <li class="category-filter"> <span><i class="fa-solid fa-angle-right"></i></span> <a
+                                    class="category-link" href="#">Kid's & Toys</a></li>
+                            <li class="category-filter"> <span><i class="fa-solid fa-angle-right"></i></span> <a
+                                    class="category-link" href="#">Health & Beauty</a></li>
+                            <li class="category-filter"> <span><i class="fa-solid fa-angle-right"></i></span> <a
+                                    class="category-link" href="#">Skin & Hair Solution</a></li>
+                            <li class="category-filter"> <span><i class="fa-solid fa-angle-right"></i></span> <a
+                                    class="category-link" href="#">Gift Items</a></li>
+                            <li class="category-filter"> <span><i class="fa-solid fa-angle-right"></i></span> <a
+                                    class="category-link" href="#">COVID 19 Protections</a></li>
+                            <li class="category-filter"> <span><i class="fa-solid fa-angle-right"></i></span> <a
+                                    class="category-link" href="#">Gift Corner</a></li>
+                            <li class="category-filter"> <span><i class="fa-solid fa-angle-right"></i></span> <a
+                                    class="category-link" href="#">Wedding & Events</a></li>
+                            <li class="category-filter"> <span><i class="fa-solid fa-angle-right"></i></span> <a
+                                    class="category-link" href="#">Novelty & Special Use</a></li>
+
+
+                        </ul>
+
+
+                    </div>
+                </div>
+
+                <div class="product-cards-view-type ml-xl-4 w-100 ">
+                    <div
+                        class="view-options border d-lg-flex justify-content-between align-items-center ml-2 p-4 d-none">
+                        <div class="items-per-page-form-select ">
+                            <div class="custom-select border ">
+                                <div class="select-trigger h-100 d-flex align-items-center justify-content-evenly  text-white"
+                                    id="selectTrigger">
+                                    <span class="d-block ">15 Items Per Page</span>
+                                    <span class="arrow-icon d-block"><i class="fa-solid fa-angle-down"></i></span>
+                                </div>
+                                <ul class="select-options bg-white border" id="selectOptions">
+                                    <li>Products Per Page</li>
+                                    <li>5 Items Per Page</li>
+                                    <li class="selected">15 Items Per Page</li>
+                                    <li>30 Items Per Page</li>
+                                    <li>50 Items Per Page</li>
+                                    <li>100 Items Per Page</li>
+                                    <li>200 Items Per Page</li>
+                                </ul>
+                            </div>
+
+
+
+
+                        </div>
+                        <div class="view-types ">
+
+                            <ul class="d-flex m-0">
+                                <li class="border grid-span-item d-flex align-items-center justify-content-center"
+                                    onclick="changeBarColor(this)">
+                                    <span class="bar"></span> <span class="bar"></span>
+                                </li>
+                                <li class="border grid-span-item d-flex align-items-center justify-content-center"
+                                    onclick="changeBarColor(this)">
+                                    <span class="bar"></span> <span class="bar"></span> <span class="bar"></span>
+                                </li>
+                                <li class="border grid-span-item active-bar d-flex align-items-center justify-content-center mr-3"
+                                    onclick="changeBarColor(this)">
+                                    <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> <span
+                                        class="bar"></span>
+                                </li>
+                                <li
+                                    class="border d-flex align-items-center  justify-content-center grid-view view-type1 current-view ml-3">
+                                    <i class="fa-solid fa-table-cells-large"></i></li>
+                                <li
+                                    class="border d-flex align-items-center justify-content-center list-view view-type1">
+                                    <i class="fa-solid fa-list"></i></li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                    <div class="product-cards-pagination ml-xl-2 mt-4 ">
+
+                        <div class="product-cards grid-cards span-4 w-100 ">
+
+
+                            <div class="card product-card  p-3 border">
+                                <div class="card-wrapper h-100">
+                                    <div class="upper ">
+                                        <div class="heart-sync-icons">
+                                            <div class="heart-icon card-icon">
+                                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <div class="sync-icon card-icon">
+                                                <a href=""><i class="fa-solid fa-rotate"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="img-view h-100">
+                                            <img src="img/right-aside-1.jpg" class="w-100 h-100 rounded-lg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="lower">
+                                        <div class="card-view-button text-center">
+                                            <div class="view-button">
+                                                <button type="button" class="btn btn-primary">View</button>
+                                            </div>
+
+                                            <div class="price pt-1">
+                                                <span class="font-weight-bold">$45.30</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-title">
+                                                <a href="" class="d-block mb-0 text-truncate text-dark">
+                                                    Puma Pink ladies dresses
+                                                </a>
+                                            </div>
+                                            <div class="brand-name">
+                                                <p class="p-0 mt-1 mb-0">Brand : Puma</p>
+                                            </div>
+                                            <div class="product-specs d-none py-3">
+                                                <p class="m-0 py-1">Washing Instructions Machine wash warm at 40C. Do
+                                                    not bleach. Tumble dry normal low heat.
+                                                    Iron low heat. Dry clean, if needed. Product Material 99% Cotton 1%
+                                                    Elastane</p>
+                                            </div>
+                                            <div class="product-price-star-rating d-flex justify-content-between pb-2">
+                                                <div class="star-rating">
+                                                    <ul class="list-unstyled p-0 d-flex">
+
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+
+
+                                                        <span class="ml-2">(1)</span>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">
+                                                    <span class="font-weight-bold">$45.30</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card product-card  p-3 border">
+                                <div class="card-wrapper h-100">
+                                    <div class="upper ">
+                                        <div class="heart-sync-icons">
+                                            <div class="heart-icon card-icon">
+                                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <div class="sync-icon card-icon">
+                                                <a href=""><i class="fa-solid fa-rotate"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="img-view h-100">
+                                            <img src="img/small-slider-img-2.jpg" class="w-100 h-100 rounded-lg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="lower">
+                                        <div class="card-view-button text-center">
+                                            <div class="view-button">
+                                                <button type="button" class="btn btn-primary">View</button>
+                                            </div>
+
+                                            <div class="price pt-1">
+                                                <span class="font-weight-bold">$45.30</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-title">
+                                                <a href="" class="d-block mb-0 text-truncate text-dark">
+                                                    Puma Pink ladies dresses
+                                                </a>
+                                            </div>
+                                            <div class="brand-name">
+                                                <p class="p-0 mt-1 mb-0">Brand : Puma</p>
+                                            </div>
+                                            <div class="product-specs d-none py-3">
+                                                <p class="m-0 py-1">Washing Instructions Machine wash warm at 40C. Do
+                                                    not bleach. Tumble dry normal low heat.
+                                                    Iron low heat. Dry clean, if needed. Product Material 99% Cotton 1%
+                                                    Elastane</p>
+                                            </div>
+                                            <div class="product-price-star-rating d-flex justify-content-between pb-2">
+                                                <div class="star-rating">
+                                                    <ul class="list-unstyled p-0 d-flex">
+
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+
+
+                                                        <span class="ml-2">(1)</span>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">
+                                                    <span class="font-weight-bold">$45.30</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card product-card  p-3 border">
+                                <div class="card-wrapper h-100">
+                                    <div class="upper ">
+                                        <div class="heart-sync-icons">
+                                            <div class="heart-icon card-icon">
+                                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <div class="sync-icon card-icon">
+                                                <a href=""><i class="fa-solid fa-rotate"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="img-view h-100">
+                                            <img src="img/right-aside-1.jpg" class="w-100 h-100 rounded-lg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="lower">
+                                        <div class="card-view-button text-center">
+                                            <div class="view-button">
+                                                <button type="button" class="btn btn-primary">View</button>
+                                            </div>
+
+                                            <div class="price pt-1">
+                                                <span class="font-weight-bold">$45.30</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-title">
+                                                <a href="" class="d-block mb-0 text-truncate text-dark">
+                                                    Puma Pink ladies dresses
+                                                </a>
+                                            </div>
+                                            <div class="brand-name">
+                                                <p class="p-0 mt-1 mb-0">Brand : Puma</p>
+                                            </div>
+                                            <div class="product-specs d-none py-3">
+                                                <p class="m-0 py-1">Washing Instructions Machine wash warm at 40C. Do
+                                                    not bleach. Tumble dry normal low heat.
+                                                    Iron low heat. Dry clean, if needed. Product Material 99% Cotton 1%
+                                                    Elastane</p>
+                                            </div>
+                                            <div class="product-price-star-rating d-flex justify-content-between pb-2">
+                                                <div class="star-rating">
+                                                    <ul class="list-unstyled p-0 d-flex">
+
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+
+
+                                                        <span class="ml-2">(1)</span>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">
+                                                    <span class="font-weight-bold">$45.30</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="card product-card  p-3 border">
+                                <div class="card-wrapper h-100">
+                                    <div class="upper ">
+                                        <div class="heart-sync-icons">
+                                            <div class="heart-icon card-icon">
+                                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <div class="sync-icon card-icon">
+                                                <a href=""><i class="fa-solid fa-rotate"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="img-view h-100">
+                                            <img src="img/right-aside-1.jpg" class="w-100 h-100 rounded-lg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="lower">
+                                        <div class="card-view-button text-center">
+                                            <div class="view-button">
+                                                <button type="button" class="btn btn-primary">View</button>
+                                            </div>
+
+                                            <div class="price pt-1">
+                                                <span class="font-weight-bold">$45.30</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-title">
+                                                <a href="" class="d-block mb-0 text-truncate text-dark">
+                                                    Puma Pink ladies dresses
+                                                </a>
+                                            </div>
+                                            <div class="brand-name">
+                                                <p class="p-0 mt-1 mb-0">Brand : Puma</p>
+                                            </div>
+                                            <div class="product-specs d-none py-3">
+                                                <p class="m-0 py-1">Washing Instructions Machine wash warm at 40C. Do
+                                                    not bleach. Tumble dry normal low heat.
+                                                    Iron low heat. Dry clean, if needed. Product Material 99% Cotton 1%
+                                                    Elastane</p>
+                                            </div>
+                                            <div class="product-price-star-rating d-flex justify-content-between pb-2">
+                                                <div class="star-rating">
+                                                    <ul class="list-unstyled p-0 d-flex">
+
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+
+
+                                                        <span class="ml-2">(1)</span>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">
+                                                    <span class="font-weight-bold">$45.30</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card product-card  p-3 border">
+                                <div class="card-wrapper h-100">
+                                    <div class="upper ">
+                                        <div class="heart-sync-icons">
+                                            <div class="heart-icon card-icon">
+                                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <div class="sync-icon card-icon">
+                                                <a href=""><i class="fa-solid fa-rotate"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="img-view h-100">
+                                            <img src="img/right-aside-1.jpg" class="w-100 h-100 rounded-lg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="lower">
+                                        <div class="card-view-button text-center">
+                                            <div class="view-button">
+                                                <button type="button" class="btn btn-primary">View</button>
+                                            </div>
+
+                                            <div class="price pt-1">
+                                                <span class="font-weight-bold">$45.30</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-title">
+                                                <a href="" class="d-block mb-0 text-truncate text-dark">
+                                                    Puma Pink ladies dresses
+                                                </a>
+                                            </div>
+                                            <div class="brand-name">
+                                                <p class="p-0 mt-1 mb-0">Brand : Puma</p>
+                                            </div>
+                                            <div class="product-specs d-none py-3">
+                                                <p class="m-0 py-1">Washing Instructions Machine wash warm at 40C. Do
+                                                    not bleach. Tumble dry normal low heat.
+                                                    Iron low heat. Dry clean, if needed. Product Material 99% Cotton 1%
+                                                    Elastane</p>
+                                            </div>
+                                            <div class="product-price-star-rating d-flex justify-content-between pb-2">
+                                                <div class="star-rating">
+                                                    <ul class="list-unstyled p-0 d-flex">
+
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+
+
+                                                        <span class="ml-2">(1)</span>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">
+                                                    <span class="font-weight-bold">$45.30</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="card product-card  p-3 border">
+                                <div class="card-wrapper h-100">
+                                    <div class="upper ">
+                                        <div class="heart-sync-icons">
+                                            <div class="heart-icon card-icon">
+                                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <div class="sync-icon card-icon">
+                                                <a href=""><i class="fa-solid fa-rotate"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="img-view h-100">
+                                            <img src="img/right-aside-1.jpg" class="w-100 h-100 rounded-lg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="lower">
+                                        <div class="card-view-button text-center">
+                                            <div class="view-button">
+                                                <button type="button" class="btn btn-primary">View</button>
+                                            </div>
+
+                                            <div class="price pt-1">
+                                                <span class="font-weight-bold">$45.30</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-title">
+                                                <a href="" class="d-block mb-0 text-truncate text-dark">
+                                                    Puma Pink ladies dresses
+                                                </a>
+                                            </div>
+                                            <div class="brand-name">
+                                                <p class="p-0 mt-1 mb-0">Brand : Puma</p>
+                                            </div>
+                                            <div class="product-specs d-none py-3">
+                                                <p class="m-0 py-1">Washing Instructions Machine wash warm at 40C. Do
+                                                    not bleach. Tumble dry normal low heat.
+                                                    Iron low heat. Dry clean, if needed. Product Material 99% Cotton 1%
+                                                    Elastane</p>
+                                            </div>
+                                            <div class="product-price-star-rating d-flex justify-content-between pb-2">
+                                                <div class="star-rating">
+                                                    <ul class="list-unstyled p-0 d-flex">
+
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+
+
+                                                        <span class="ml-2">(1)</span>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">
+                                                    <span class="font-weight-bold">$45.30</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card product-card  p-3 border">
+                                <div class="card-wrapper h-100">
+                                    <div class="upper ">
+                                        <div class="heart-sync-icons">
+                                            <div class="heart-icon card-icon">
+                                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <div class="sync-icon card-icon">
+                                                <a href=""><i class="fa-solid fa-rotate"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="img-view h-100">
+                                            <img src="img/right-aside-1.jpg" class="w-100 h-100 rounded-lg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="lower">
+                                        <div class="card-view-button text-center">
+                                            <div class="view-button">
+                                                <button type="button" class="btn btn-primary">View</button>
+                                            </div>
+
+                                            <div class="price pt-1">
+                                                <span class="font-weight-bold">$45.30</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-title">
+                                                <a href="" class="d-block mb-0 text-truncate text-dark">
+                                                    Puma Pink ladies dresses
+                                                </a>
+                                            </div>
+                                            <div class="brand-name">
+                                                <p class="p-0 mt-1 mb-0">Brand : Puma</p>
+                                            </div>
+                                            <div class="product-specs d-none py-3">
+                                                <p class="m-0 py-1">Washing Instructions Machine wash warm at 40C. Do
+                                                    not bleach. Tumble dry normal low heat.
+                                                    Iron low heat. Dry clean, if needed. Product Material 99% Cotton 1%
+                                                    Elastane</p>
+                                            </div>
+                                            <div class="product-price-star-rating d-flex justify-content-between pb-2">
+                                                <div class="star-rating">
+                                                    <ul class="list-unstyled p-0 d-flex">
+
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+
+
+                                                        <span class="ml-2">(1)</span>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">
+                                                    <span class="font-weight-bold">$45.30</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="card product-card  p-3 border">
+                                <div class="card-wrapper h-100">
+                                    <div class="upper ">
+                                        <div class="heart-sync-icons">
+                                            <div class="heart-icon card-icon">
+                                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <div class="sync-icon card-icon">
+                                                <a href=""><i class="fa-solid fa-rotate"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="img-view h-100">
+                                            <img src="img/right-aside-1.jpg" class="w-100 h-100 rounded-lg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="lower">
+                                        <div class="card-view-button text-center">
+                                            <div class="view-button">
+                                                <button type="button" class="btn btn-primary">View</button>
+                                            </div>
+
+                                            <div class="price pt-1">
+                                                <span class="font-weight-bold">$45.30</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-title">
+                                                <a href="" class="d-block mb-0 text-truncate text-dark">
+                                                    Puma Pink ladies dresses
+                                                </a>
+                                            </div>
+                                            <div class="brand-name">
+                                                <p class="p-0 mt-1 mb-0">Brand : Puma</p>
+                                            </div>
+                                            <div class="product-specs d-none py-3">
+                                                <p class="m-0 py-1">Washing Instructions Machine wash warm at 40C. Do
+                                                    not bleach. Tumble dry normal low heat.
+                                                    Iron low heat. Dry clean, if needed. Product Material 99% Cotton 1%
+                                                    Elastane</p>
+                                            </div>
+                                            <div class="product-price-star-rating d-flex justify-content-between pb-2">
+                                                <div class="star-rating">
+                                                    <ul class="list-unstyled p-0 d-flex">
+
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+
+
+                                                        <span class="ml-2">(1)</span>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">
+                                                    <span class="font-weight-bold">$45.30</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card product-card  p-3 border">
+                                <div class="card-wrapper h-100">
+                                    <div class="upper ">
+                                        <div class="heart-sync-icons">
+                                            <div class="heart-icon card-icon">
+                                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <div class="sync-icon card-icon">
+                                                <a href=""><i class="fa-solid fa-rotate"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="img-view h-100">
+                                            <img src="img/right-aside-1.jpg" class="w-100 h-100 rounded-lg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="lower">
+                                        <div class="card-view-button text-center">
+                                            <div class="view-button">
+                                                <button type="button" class="btn btn-primary">View</button>
+                                            </div>
+
+                                            <div class="price pt-1">
+                                                <span class="font-weight-bold">$45.30</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-title">
+                                                <a href="" class="d-block mb-0 text-truncate text-dark">
+                                                    Puma Pink ladies dresses
+                                                </a>
+                                            </div>
+                                            <div class="brand-name">
+                                                <p class="p-0 mt-1 mb-0">Brand : Puma</p>
+                                            </div>
+                                            <div class="product-specs d-none py-3">
+                                                <p class="m-0 py-1">Washing Instructions Machine wash warm at 40C. Do
+                                                    not bleach. Tumble dry normal low heat.
+                                                    Iron low heat. Dry clean, if needed. Product Material 99% Cotton 1%
+                                                    Elastane</p>
+                                            </div>
+                                            <div class="product-price-star-rating d-flex justify-content-between pb-2">
+                                                <div class="star-rating">
+                                                    <ul class="list-unstyled p-0 d-flex">
+
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+
+
+                                                        <span class="ml-2">(1)</span>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">
+                                                    <span class="font-weight-bold">$45.30</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card product-card  p-3 border">
+                                <div class="card-wrapper h-100">
+                                    <div class="upper ">
+                                        <div class="heart-sync-icons">
+                                            <div class="heart-icon card-icon">
+                                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <div class="sync-icon card-icon">
+                                                <a href=""><i class="fa-solid fa-rotate"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="img-view h-100">
+                                            <img src="img/right-aside-1.jpg" class="w-100 h-100 rounded-lg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="lower">
+                                        <div class="card-view-button text-center">
+                                            <div class="view-button">
+                                                <button type="button" class="btn btn-primary">View</button>
+                                            </div>
+
+                                            <div class="price pt-1">
+                                                <span class="font-weight-bold">$45.30</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-title">
+                                                <a href="" class="d-block mb-0 text-truncate text-dark">
+                                                    Puma Pink ladies dresses
+                                                </a>
+                                            </div>
+                                            <div class="brand-name">
+                                                <p class="p-0 mt-1 mb-0">Brand : Puma</p>
+                                            </div>
+                                            <div class="product-specs d-none py-3">
+                                                <p class="m-0 py-1">Washing Instructions Machine wash warm at 40C. Do
+                                                    not bleach. Tumble dry normal low heat.
+                                                    Iron low heat. Dry clean, if needed. Product Material 99% Cotton 1%
+                                                    Elastane</p>
+                                            </div>
+                                            <div class="product-price-star-rating d-flex justify-content-between pb-2">
+                                                <div class="star-rating">
+                                                    <ul class="list-unstyled p-0 d-flex">
+
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+
+
+                                                        <span class="ml-2">(1)</span>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">
+                                                    <span class="font-weight-bold">$45.30</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card product-card  p-3 border">
+                                <div class="card-wrapper h-100">
+                                    <div class="upper ">
+                                        <div class="heart-sync-icons">
+                                            <div class="heart-icon card-icon">
+                                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <div class="sync-icon card-icon">
+                                                <a href=""><i class="fa-solid fa-rotate"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="img-view h-100">
+                                            <img src="img/right-aside-1.jpg" class="w-100 h-100 rounded-lg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="lower">
+                                        <div class="card-view-button text-center">
+                                            <div class="view-button">
+                                                <button type="button" class="btn btn-primary">View</button>
+                                            </div>
+
+                                            <div class="price pt-1">
+                                                <span class="font-weight-bold">$45.30</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-title">
+                                                <a href="" class="d-block mb-0 text-truncate text-dark">
+                                                    Puma Pink ladies dresses
+                                                </a>
+                                            </div>
+                                            <div class="brand-name">
+                                                <p class="p-0 mt-1 mb-0">Brand : Puma</p>
+                                            </div>
+                                            <div class="product-specs d-none py-3">
+                                                <p class="m-0 py-1">Washing Instructions Machine wash warm at 40C. Do
+                                                    not bleach. Tumble dry normal low heat.
+                                                    Iron low heat. Dry clean, if needed. Product Material 99% Cotton 1%
+                                                    Elastane</p>
+                                            </div>
+                                            <div class="product-price-star-rating d-flex justify-content-between pb-2">
+                                                <div class="star-rating">
+                                                    <ul class="list-unstyled p-0 d-flex">
+
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+
+
+                                                        <span class="ml-2">(1)</span>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">
+                                                    <span class="font-weight-bold">$45.30</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card product-card  p-3 border">
+                                <div class="card-wrapper h-100">
+                                    <div class="upper ">
+                                        <div class="heart-sync-icons">
+                                            <div class="heart-icon card-icon">
+                                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <div class="sync-icon card-icon">
+                                                <a href=""><i class="fa-solid fa-rotate"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="img-view h-100">
+                                            <img src="img/right-aside-1.jpg" class="w-100 h-100 rounded-lg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="lower">
+                                        <div class="card-view-button text-center">
+                                            <div class="view-button">
+                                                <button type="button" class="btn btn-primary">View</button>
+                                            </div>
+
+                                            <div class="price pt-1">
+                                                <span class="font-weight-bold">$45.30</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-title">
+                                                <a href="" class="d-block mb-0 text-truncate text-dark">
+                                                    Puma Pink ladies dresses
+                                                </a>
+                                            </div>
+                                            <div class="brand-name">
+                                                <p class="p-0 mt-1 mb-0">Brand : Puma</p>
+                                            </div>
+                                            <div class="product-specs d-none py-3">
+                                                <p class="m-0 py-1">Washing Instructions Machine wash warm at 40C. Do
+                                                    not bleach. Tumble dry normal low heat.
+                                                    Iron low heat. Dry clean, if needed. Product Material 99% Cotton 1%
+                                                    Elastane</p>
+                                            </div>
+                                            <div class="product-price-star-rating d-flex justify-content-between pb-2">
+                                                <div class="star-rating">
+                                                    <ul class="list-unstyled p-0 d-flex">
+
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li class="checked"><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+
+
+                                                        <span class="ml-2">(1)</span>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-price">
+                                                    <span class="font-weight-bold">$45.30</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="pagination-container d-flex justify-content-center ">
+                            <nav aria-label="Page navigation example ">
+                                <ul class="pagination">
+                                  <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                      <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                  </li>
+                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                      <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </nav>
+                        </div>
+                       
+
+                       
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/bootstrap-slider.js"></script>
+    <script src="https://cdn.rawgit.com/bevacqua/nice-select/master/dist/js/jquery.nice-select.min.js"></script>
+    <script src="products.js"></script>
+</body>
+
+</html>
