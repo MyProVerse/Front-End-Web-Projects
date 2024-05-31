@@ -4,22 +4,22 @@ Welcome to my front-end web development portfolio repository! This repository sh
 
 ## Projects
 
-### 1. [Ninja E-Sports Homepage](ninja-e-sports-homepage)
+### 1. [Ninja E-sports](Ninja E-sports)
 A responsive and dynamic website for Ninja E-Sports, featuring immersive and engaging user experiences.
 - **Technologies:** HTML, CSS, JavaScript, jQuery
 - **Features:** Responsive design, modern UI/UX, interactive elements
 
-### 2. [Reignverse Dating Website](reignverse-dating-website)
+### 2. [ReignVerse Dating website](ReignVerse Dating website)
 A front-end implementation of a dating website for Reignverse, including a homepage and about page.
 - **Technologies:** HTML, CSS, Bootstrap
 - **Features:** Responsive design, modern UI/UX, Bootstrap framework
 
-### 3. [ViserMart E-Commerce Website](visermart-e-commerce-website)
+### 3. [visermart](visermart)
 An e-commerce platform for ViserMart with a homepage and products page.
 - **Technologies:** HTML, CSS, JavaScript, jQuery, Bootstrap
 - **Features:** Responsive design, modern UI/UX, dynamic content, Bootstrap framework
 
-### 4. [Club New Mnday Contact Page](club-new-mnday-contact-page)
+### 4. [ClubNewMnday contact page](ClubNewMnday contact page)
 A contact page for Club New Mnday with a simple and intuitive contact form.
 - **Technologies:** HTML, CSS
 - **Features:** Responsive design, modern UI/UX, contact form
