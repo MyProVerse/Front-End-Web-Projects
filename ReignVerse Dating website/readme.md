@@ -3,10 +3,14 @@ Welcome to the Reignverse dating website repository! This project is a front-end
 
 **Features**
 **Responsive Design:** Both the homepage and about page are optimized for various screen sizes, ensuring a seamless browsing experience across devices.
+
 **Modern UI/UX:** Utilizing contemporary design principles and techniques to deliver visually appealing and user-friendly interfaces.
+
 **Bootstrap Framework:** Leveraging the Bootstrap framework for responsive layout components and styling, ensuring consistency and compatibility across browsers.
 Pages
+
 **Homepage (index.html):** The homepage serves as the landing page for the dating website, featuring a welcome message, user registration/login forms, and a brief overview of the website's features.
+
 
 **About Page:** The about page provides information about Reignverse, its mission, and the team behind the website. It offers users insights into the website's purpose and values.
 
