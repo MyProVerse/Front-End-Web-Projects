@@ -1,0 +1,352 @@
+*,
+.row,
+.container-fluid {
+    padding: 0%;
+    margin: 0%;
+    font-family: Montserrat, sans-serif;
+}
+
+.heading-1 h1,
+.heading-4 h2,
+.downlist a,
+.nav-item a,
+.heading-2 h1,
+.heading-3 h2 {
+    font-weight: 700;
+}
+
+.para p,
+h2.term {
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+a,
+i.bars {
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.icons li {
+    height: 4.5rem;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 4.5rem;
+    background-color: #B21395;
+}
+
+.icons i {
+    font-size: 2.8rem;
+    color: white;
+}
+
+.logos img {
+    height: 9rem;
+    width: 9rem;
+}
+
+.logos img:hover,
+.buttn button:hover,
+button.buttnn:hover {
+    transform: scale(1.3);
+    transition: all 2s;
+    cursor: pointer;
+}
+
+.hero {
+    background-image: radial-gradient(circle, rgb(113, 0, 92), rgb(220, 0, 194));
+}
+
+.banner {
+    background-image: url('pics/Rectangle\ 42.png');
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+
+}
+
+.box-2,
+.box-4 {
+    border: 8px solid #48093C;
+}
+
+.box-5,
+.box-10,
+.box-3b,
+.second-half,
+header {
+    background-color: #48093C;
+}
+
+.box-7 {
+    background-color: #124630;
+}
+
+.box-8 {
+    background-color: #1B0D25;
+}
+
+.box-3 .col-4 img {
+    width: 99.5%;
+}
+
+.buttn button {
+    border: 3px solid white;
+    border-radius: 50px;
+    width: 12rem;
+    background-color: #6f095c;
+}
+
+button.buttnn {
+    border-radius: 50px;
+    width: 10rem;
+    background-color: #db0eb5;
+}
+
+.simple1 {
+    height: 6rem;
+    width: 13rem;
+}
+
+.simple2 {
+    height: 3rem;
+    width: 12rem;
+}
+
+.mark1,
+.mark3 {
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+.mark2 {
+    height: 8rem;
+    width: 8rem;
+}
+
+
+.text-inf {
+    color: #001F84;
+}
+
+.box-6 .phone {
+    width: 24.7rem;
+}
+
+.box-9 {
+    background-image: linear-gradient(140deg, #7e0d69 50%, #B21395 50%);
+}
+
+.toy-img1 {
+    height: 30rem;
+    width: 28rem;
+}
+
+.toy-img2 {
+    height: 28rem;
+    width: 28rem;
+}
+
+.banner1 {
+    background-image: url('pics/hero1.png');
+    background-position: center center;
+    background-size: cover;
+
+    min-height: 50rem;
+
+}
+
+.heading-6 span {
+    font-weight: 600;
+}
+
+.boxy3 p {
+    font-weight: 500;
+}
+
+.heading-6 h1 {
+    font-size: 2.85rem;
+}
+
+div.banner1 {
+    padding-top: 14rem;
+}
+
+.story-para p {
+    font-weight: 500;
+    font-size: 1.75rem;
+}
+
+.first-half,
+.buttnn {
+    background-color: #AE1892;
+}
+
+.boxy1 {
+    background-color: #D631B8;
+    border-radius: 12px;
+}
+
+.founder-img img {
+    border-radius: 50px;
+    height: 30rem;
+}
+
+.box-4b {
+    background-image: linear-gradient(#69033d82, #5e04359c), url('pics/c837a6_802754fb90974aadbc1045d5628ea280_mv2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width:1200px) {
+
+    .heading-1 h1,
+    .heading-3 h2 {
+        font-size: 3rem;
+    }
+
+    .toy-img1 {
+        height: 28rem;
+        width: 28rem;
+    }
+
+    .toy-img2 {
+        height: 25rem;
+        width: 23rem;
+    }
+
+}
+
+@media only screen and (max-width:992px) {
+    .toy-img1 {
+        height: 20rem;
+        width: 18rem;
+    }
+
+    .toy-img2 {
+        height: 20rem;
+        width: 15rem;
+    }
+
+    .founder-img img {
+        height: 25rem;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .heading-3 h2 {
+        font-size: 2.5rem;
+    }
+
+    .logos img {
+        height: 7rem;
+        width: 7rem;
+        border-radius: 50%;
+    }
+
+    .toy-img1 {
+        height: 15rem;
+        width: 14rem;
+    }
+
+    .toy-img2 {
+        height: 15rem;
+        width: 13rem;
+    }
+}
+
+@media only screen and (max-width:576px) {
+
+    .heading-6 h1 {
+        font-size: 1.5rem;
+    }
+
+    .box-3b .container-sm {
+        padding: 0;
+    }
+
+    .boxy1 p,
+    .heading-6 span {
+        font-size: .85rem;
+        font-weight: 400;
+    }
+
+    .brand-logo img {
+        height: 35px;
+        width: 75px;
+    }
+
+    .headings h5,
+    .headings h4,
+    .heading-3 h2 {
+        font-size: 1rem;
+    }
+
+    .para p {
+        font-weight: 400;
+        font-size: 1rem;
+    }
+
+    .heading-5 h5 {
+        font-weight: 600;
+        font-size: 1.7rem;
+    }
+
+    .heading-1 h1,
+    .heading-2 h1,
+    .heading-3 h2,
+    .heading-4 h2 {
+        font-size: 1.7rem;
+    }
+
+    .mark2 {
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .icons i {
+        font-size: 1.4rem;
+    }
+
+    .icons li {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .toy-img1 {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .headings h4,
+    .headings h5 {
+        font-size: 1rem;
+    }
+
+    .toy-img2 {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .founder-img img {
+        height: 17rem;
+    }
+}
+
+@media only screen and (max-width:380px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:339px) {
+    html {
+        font-size: 12px;
+    }
+}
