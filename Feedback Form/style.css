@@ -1,0 +1,126 @@
+
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: rgba(128, 128, 128, 0.511);
+            
+        }
+
+        .main-container {
+            
+            max-width: 450px;
+       
+            background-color: white;
+            margin: auto;
+
+        }
+
+        .form-head {
+            margin-top: 30px;
+            padding: 10px 15px ;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid lightgrey;
+
+            
+        }
+        .form-head h2{
+            font-weight: 600;
+            font-size: 22px;
+           
+        }
+
+        .cross-icon i {
+            font-size: 22px;
+            cursor: pointer;
+           
+        }
+        
+        .beta-support-query{
+            padding: 20px 15px 0px 15px ;
+            color: grey;
+        }
+
+        .beta-support-query1{
+            color: grey;
+        }
+
+.emoji-feedback {
+width: 80%;
+  display: flex;
+  justify-content:space-around ;
+  align-items: center;
+  margin: auto;
+  padding-bottom: 20px;
+
+
+}
+
+.emoji-feedback label {
+  
+  cursor: pointer;
+}
+
+.emoji-feedback .emoji {
+  font-size:30px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+label
+{
+   
+    border: 2px solid lightblue;
+    height: 65px;
+    width: 65px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display:flex;
+  align-self: center;
+  
+}
+input[type="radio"]:checked + label {
+   background-color: greenyellow;
+   
+}
+.form-footer
+{
+    padding: 10px 15px ;
+}
+.msg textarea{
+    
+    resize: none;
+    border: lightgrey 1px solid;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+    
+}
+
+.submit-btn
+{
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   margin-top: 20px;
+   padding-bottom:20px ;
+
+}
+button{
+    background-color: rgb(85, 85, 255);
+    padding: 10px 0px;
+    width: 98%;
+    border-radius: 10px;
+    color: white;
+    border: 1px ;
+
+}
+   

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/8a522ec562.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+        integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+        <form action="backend.php" method="post">
+            <!-- form-head -->
+            <div class="form-head">
+                <div class="heading">
+                    <h2>Leave us feedback</h2>
+                </div>
+                <div class="cross-icon"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+
+
+            <!-- form-body -->
+            <div class="form-body">
+
+                <div class="beta-support-query">
+                    <p>what do you think of Smart Support beta?</p>
+                </div>
+
+                <div class="emoji-feedback">
+
+                    <input type="radio" id="emoji4" name="feedback" value="bad">
+                    <label for="emoji4"><span class="emoji">😕</span></label>
+              
+                    <input type="radio" id="emoji3" name="feedback" value="ok">
+                    <label for="emoji3"><span class="emoji">😐</span></label>
+              
+                    <input type="radio" id="emoji1" name="feedback" value="great">
+                    <label for="emoji1"><span class="emoji">😀</span></label>
+            
+                  </div>
+
+                  <div class="form-footer">
+                    <div class="beta-support-query1">
+                        <p>Tell us how we can improve?</p>
+                    </div>
+
+                    <div class="msg">
+                        <textarea placeholder="Write your message here" name="" id=""  rows="5"></textarea>
+                    </div>
+                    
+                    <div class="submit-btn">
+                        <button type="button">SUBMIT</button>
+                    </div>
+
+                  </div>
+
+
+
+        </form>
+    </div>
+</body>
+
+</html>
